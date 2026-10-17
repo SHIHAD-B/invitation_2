@@ -1,8 +1,14 @@
 import Image from "next/image";
+import { Amiri } from "next/font/google";
 import CeremonyInfo from "@/components/CeremonyInfo";
 import ReceptionInfo from "@/components/ReceptionInfo";
 import ReceptionVenue from "@/components/ReceptionVenue";
 import Guestbook from "@/components/Guestbook";
+
+const amiri = Amiri({
+  weight: "700",
+  subsets: ["arabic"],
+});
 
 function SaveTheDateMark() {
   return (
@@ -26,6 +32,13 @@ function SaveTheDateMark() {
       </svg>
       <p className="mt-2 font-serif text-[0.68rem] font-medium tracking-[0.38em] text-ink sm:text-xs sm:tracking-[0.42em]">
         SAVE THE DATE
+      </p>
+      <p
+        lang="ar"
+        dir="rtl"
+        className={`${amiri.className} bismillah-gold mt-3 px-2 text-center text-[1.35rem] leading-relaxed sm:text-[1.7rem]`}
+      >
+        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
       </p>
     </div>
   );
@@ -71,28 +84,28 @@ export default function InvitationInner() {
 
             <div className="photo-clip absolute inset-x-0 top-0 z-[4] h-[80.5%]">
               <div className="photo-left absolute top-[8%] left-[14%] w-[40%] sm:left-[16%] sm:w-[38%]">
-                <div className="overflow-hidden bg-[#fbfaf6] p-[3px] shadow-[0_12px_28px_rgba(20,40,70,0.22)] sm:p-1">
+                <div className="overflow-hidden bg-[#fbfaf6] p-[3px] shadow-[0_12px_28px_rgba(107,35,66,0.22)] sm:p-1">
                   <div className="relative aspect-[3/4] overflow-hidden">
                     <Image
-                      src="/images/photo2.webp"
-                      alt="Shuhaib and Afreena together"
+                      src="/images/photo-1.jpeg"
+                      alt="Rashid Khan and Sanfiya together"
                       fill
                       sizes="(max-width: 768px) 38vw, 200px"
-                      className="object-cover object-[50%_18%]"
+                      className="object-cover object-top"
                     />
                   </div>
                 </div>
               </div>
 
               <div className="photo-right absolute top-[14%] left-[40%] w-[44%] sm:left-[42%] sm:w-[42%]">
-                <div className="overflow-hidden bg-[#fbfaf6] p-[3px] shadow-[0_14px_30px_rgba(20,40,70,0.24)] sm:p-1">
+                <div className="overflow-hidden bg-[#fbfaf6] p-[3px] shadow-[0_14px_30px_rgba(107,35,66,0.24)] sm:p-1">
                   <div className="relative aspect-[3/4] overflow-hidden">
                     <Image
-                      src="/images/photo1.webp"
-                      alt="Shuhaib and Afreena walking together"
+                      src="/images/photo-2.jpeg"
+                      alt="Rashid Khan and Sanfiya walking together"
                       fill
                       sizes="(max-width: 768px) 42vw, 220px"
-                      className="object-cover object-[50%_16%]"
+                      className="object-cover object-top"
                     />
                   </div>
                 </div>

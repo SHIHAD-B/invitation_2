@@ -13,14 +13,14 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#0b2748",
+          background: "#6b2342",
           color: "#f6f1e6",
           fontSize: 16,
           fontWeight: 700,
           letterSpacing: "-0.08em",
         }}
       >
-        SA
+        RS
       </div>
     ),
     { ...size },

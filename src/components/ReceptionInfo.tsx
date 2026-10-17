@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState, type MouseEvent } from "react";
 import RsvpModal from "@/components/RsvpModal";
 
-const RECEPTION_AT = new Date("2027-01-03T11:30:00+04:00");
+const RECEPTION_AT = new Date("2027-01-17T11:30:00+04:00");
 
 const WEEKDAYS = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"];
 const JANUARY_2027_START_OFFSET = 4;
@@ -53,7 +53,7 @@ function JanuaryCalendar() {
         ))}
         {cells.map((day, index) => (
           <span key={`${day ?? "empty"}-${index}`} className="flex h-6 items-center justify-center sm:h-7">
-            {day === 3 ? <HeartMark /> : day}
+            {day === 17 ? <HeartMark /> : day}
           </span>
         ))}
       </div>
@@ -64,10 +64,11 @@ function JanuaryCalendar() {
 function googleCalendarUrl() {
   const params = new URLSearchParams({
     action: "TEMPLATE",
-    text: "Shuhaib Babu & Afreena K.S Reception",
-    dates: "20270103T073000Z/20270103T123000Z",
-    details: "The reception will take place on Sunday, 3 January 2027 at 11:30 AM.",
-    location: "Aiswarya Auditorium, Thottupalam, Kinassery(po), Palakkad",
+    text: "Rashid Khan & Sanfiya Reception",
+    dates: "20270117T073000Z/20270117T123000Z",
+    details: "The reception will take place on Sunday, 17 January 2027 at 11:30 AM.",
+    location:
+      "Thevarcad Convention Centre, Valliyode, Mudappallur Road, Vadakkencherry, Kerala 678682, India",
   });
   return `https://calendar.google.com/calendar/render?${params.toString()}`;
 }
@@ -82,7 +83,7 @@ function isAppleCalendar() {
 function addToCalendar(event: MouseEvent<HTMLAnchorElement>) {
   if (isAppleCalendar()) {
     event.preventDefault();
-    window.location.href = "/shuhaib-afreena-reception.ics";
+    window.location.href = "/rashid-sanfiya-reception.ics";
   }
 }
 
@@ -131,7 +132,7 @@ export default function ReceptionInfo() {
           />
         </div>
 
-        <article className="relative z-10 rounded-2xl bg-navy px-5 pb-12 pt-10 text-center text-cream shadow-[0_18px_40px_rgba(11,39,72,0.28)] sm:px-10 sm:pb-14 sm:pt-12">
+        <article className="relative z-10 rounded-2xl bg-navy px-5 pb-12 pt-10 text-center text-cream shadow-[0_18px_40px_rgba(107,35,66,0.28)] sm:px-10 sm:pb-14 sm:pt-12">
           <p className="font-serif text-[0.72rem] font-medium tracking-[0.28em] sm:text-sm">
             RECEPTION INFO
           </p>
@@ -144,7 +145,7 @@ export default function ReceptionInfo() {
           </div>
 
           <div className="mt-5 flex items-center justify-center gap-3">
-            <p className="font-serif text-5xl leading-none sm:text-6xl">03</p>
+            <p className="font-serif text-5xl leading-none sm:text-6xl">17</p>
             <span className="h-10 w-px bg-cream/35 sm:h-12" />
             <p className="text-left font-serif text-xs leading-tight tracking-[0.18em] sm:text-sm">
               JANUARY

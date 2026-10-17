@@ -3,11 +3,9 @@ import Image from "next/image";
 function FamilyBlock({
   title,
   names,
-  relation,
 }: {
   title: string;
   names: string;
-  relation: string;
 }) {
   return (
     <div className="text-center">
@@ -16,9 +14,6 @@ function FamilyBlock({
       </p>
       <p className="mt-1 whitespace-pre-line font-serif text-[0.95rem] font-medium leading-snug text-cream sm:text-base">
         {names}
-      </p>
-      <p className="mt-2 px-2 font-serif text-[0.62rem] leading-relaxed text-cream/70 sm:px-0 sm:text-[0.7rem]">
-        {relation}
       </p>
     </div>
   );
@@ -35,28 +30,20 @@ export default function CeremonyInfo() {
           >
             &amp;
           </span>
-          <span className="relative block">SHUHAIB BABU</span>
-          <span className="relative mt-1 block">AFREENA K.S</span>
+          <span className="relative block">RASHID KHAN</span>
+          <span className="relative mt-1 block">SANFIYA</span>
         </h2>
 
         <div className="relative mt-6 w-full max-w-[21.5rem] sm:mt-8 sm:max-w-xl md:max-w-2xl">
-          <article className="relative z-10 rounded-2xl bg-navy px-5 pb-20 pt-8 text-cream shadow-[0_18px_40px_rgba(11,39,72,0.28)] sm:px-12 sm:pb-12 sm:pt-10 md:px-16 md:py-12">
+          <article className="relative z-10 rounded-2xl bg-navy px-5 pb-20 pt-8 text-cream shadow-[0_18px_40px_rgba(107,35,66,0.28)] sm:px-12 sm:pb-12 sm:pt-10 md:px-16 md:py-12">
             <p className="text-center font-serif text-[0.72rem] font-medium tracking-[0.28em] sm:text-sm">
               CEREMONY INFO
             </p>
 
             <div className="relative z-10 mt-7 grid grid-cols-1 gap-6 sm:mt-8 sm:grid-cols-[1fr_auto_1fr] sm:items-start sm:gap-5">
-              <FamilyBlock
-                title="Mr. & Mrs."
-                names={"Babu Muhammed\nMumthaz Babu"}
-                relation="Grandson of Late Muhammed Abdul Khader & Late Ali V.P"
-              />
+              <FamilyBlock title="Mr. & Mrs." names={"Saleem\nRubeena"} />
               <div className="mx-auto h-px w-16 bg-cream/25 sm:mx-0 sm:h-16 sm:w-px sm:self-center" />
-              <FamilyBlock
-                title="Mr. & Mrs."
-                names={"Shoukaith Ali\nFarijan"}
-                relation="Granddaughter of Late Yusif Haji & Late Muhammed"
-              />
+              <FamilyBlock title="Mr. & Mrs." names={"Nowshad\nShajitha"} />
             </div>
 
             <p className="relative z-10 mt-8 px-1 text-center font-serif text-[0.62rem] leading-relaxed tracking-[0.08em] text-cream/85 sm:mt-10 sm:px-4 sm:text-[0.7rem] sm:tracking-[0.16em]">
@@ -67,14 +54,14 @@ export default function CeremonyInfo() {
 
             <div className="relative z-10 mt-6 px-6 text-center sm:mt-8 sm:px-10">
               <p className="font-serif text-[1.7rem] font-normal leading-tight text-cream sm:text-4xl md:text-[2.6rem]">
-                Shuhaib Babu
+                Rashid Khan
               </p>
               <p className="mt-2 font-serif text-[0.62rem] tracking-[0.28em] text-cream/70">
                 GROOM
               </p>
               <p className="my-3 font-serif text-2xl italic text-cream/90 sm:text-3xl">&amp;</p>
               <p className="font-serif text-[1.7rem] font-normal leading-tight text-cream sm:text-4xl md:text-[2.6rem]">
-                Afreena K.s
+                Sanfiya
               </p>
               <p className="mt-2 font-serif text-[0.62rem] tracking-[0.28em] text-cream/70">
                 BRIDE

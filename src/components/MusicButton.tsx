@@ -3,7 +3,7 @@
 import { useEffect, useImperativeHandle, useRef, useState, type Ref } from "react";
 import { createPortal } from "react-dom";
 
-const AUDIO_SRC = "/audio/IMG_9316.mp3";
+const AUDIO_SRC = "/audio/videoplayback.mp3";
 const VOLUME = 1;
 
 export type MusicHandle = {
@@ -197,7 +197,7 @@ export default function MusicButton({
       data-music-toggle
       aria-label={playing ? "Pause music" : "Play music"}
       onClick={toggle}
-      className="fixed right-4 bottom-[max(1rem,env(safe-area-inset-bottom))] z-50 grid size-12 place-items-center rounded-full bg-navy shadow-[0_8px_18px_rgba(11,39,72,0.28)] touch-manipulation sm:right-6 sm:bottom-6 sm:size-14"
+      className="fixed right-4 bottom-[max(1rem,env(safe-area-inset-bottom))] z-50 grid size-12 place-items-center rounded-full bg-navy shadow-[0_8px_18px_rgba(107,35,66,0.28)] touch-manipulation sm:right-6 sm:bottom-6 sm:size-14"
     >
       {playing ? <EqualizerIcon /> : <MusicNoteIcon />}
     </button>,

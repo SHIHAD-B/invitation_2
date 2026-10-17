@@ -4,7 +4,7 @@ import { getRsvps } from "@/lib/rsvp-data";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "RSVP list · Shuhaib & Afreena",
+  title: "RSVP list · Rashid Khan & Sanfiya",
 };
 
 function formatTime(value: string) {
@@ -48,7 +48,7 @@ export default async function RsvpListPage() {
         {rsvps.length === 0 ? (
           <p className="mt-8 font-serif text-sm text-navy/70">No RSVPs yet.</p>
         ) : (
-          <div className="mt-6 overflow-x-auto rounded-2xl bg-white shadow-[0_12px_32px_rgba(11,39,72,0.1)]">
+          <div className="mt-6 overflow-x-auto rounded-2xl bg-white shadow-[0_12px_32px_rgba(107,35,66,0.1)]">
             <table className="w-full min-w-[40rem] border-collapse text-left text-sm">
               <thead className="bg-navy text-cream">
                 <tr>

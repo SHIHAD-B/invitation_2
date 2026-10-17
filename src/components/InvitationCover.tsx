@@ -14,8 +14,8 @@ const INNER_IMAGES = [
   "/images/envelop.webp",
   "/images/envelop-cover.webp",
   "/images/flower-spray.webp",
-  "/images/photo1.webp",
-  "/images/photo2.webp",
+  "/images/photo-1.jpeg",
+  "/images/photo-2.jpeg",
 ] as const;
 
 function HeartIcon() {
@@ -45,7 +45,7 @@ function LeafMark() {
 function BloomBurst() {
   return (
     <div className="pointer-events-none absolute inset-0 z-0" aria-hidden>
-      <div className="bloom-glow absolute left-1/2 top-1/2 size-[130%] rounded-full bg-[#8aa4c8]/35 blur-3xl" />
+      <div className="bloom-glow absolute left-1/2 top-1/2 size-[130%] rounded-full bg-[#d4a0b4]/35 blur-3xl" />
       <Image
         src="/images/flower-left.webp"
         alt=""
@@ -129,7 +129,7 @@ export default function InvitationCover() {
           <InvitationInner />
         </div>
       ) : (
-        <section className="relative isolate flex min-h-dvh flex-1 items-center justify-center overflow-hidden bg-[radial-gradient(ellipse_at_center,_#163a66_0%,_#0a2344_52%,_#07182f_100%)] px-4 pt-[max(2.5rem,env(safe-area-inset-top))] pb-[max(2rem,env(safe-area-inset-bottom))] sm:px-6">
+        <section className="relative isolate flex min-h-dvh flex-1 items-center justify-center overflow-hidden bg-[radial-gradient(ellipse_at_center,_#8a3a56_0%,_#5a1c36_52%,_#3d1224_100%)] px-4 pt-[max(2.5rem,env(safe-area-inset-top))] pb-[max(2rem,env(safe-area-inset-bottom))] sm:px-6">
           <FallingFlowers />
           <div className="relative z-10 w-full max-w-[23.5rem] sm:max-w-xl md:max-w-[46rem] lg:max-w-[52rem]">
           {opening ? <BloomBurst /> : null}
@@ -160,18 +160,18 @@ export default function InvitationCover() {
 
             <div className="relative z-10 flex flex-col items-center px-8 sm:px-16 md:px-20">
               <div className={`relative mb-5 sm:mb-6 md:mb-7 ${opening ? "heart-exit" : ""}`}>
-                <div className="absolute left-1/2 top-1/2 size-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#6b86b4]/35 blur-xl sm:size-20" />
-                <div className="relative flex size-12 items-center justify-center rounded-full bg-navy shadow-[0_8px_20px_rgba(11,39,72,0.22)] sm:size-14">
+                <div className="absolute left-1/2 top-1/2 size-16 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#b86b86]/35 blur-xl sm:size-20" />
+                <div className="relative flex size-12 items-center justify-center rounded-full bg-navy shadow-[0_8px_20px_rgba(107,35,66,0.22)] sm:size-14">
                   <HeartIcon />
                 </div>
               </div>
 
               <h1 className="font-serif text-[1.7rem] font-normal leading-[1.15] tracking-[-0.01em] text-ink sm:text-[2.15rem] md:text-[2.45rem]">
-                <span className="block">Shuhaib Babu</span>
+                <span className="block">Rashid Khan</span>
                 <span className="my-1 block font-serif text-[1.05rem] font-normal text-ink sm:my-1.5 sm:text-xl">
                   &amp;
                 </span>
-                <span className="block">Afreena K.S</span>
+                <span className="block">Sanfiya</span>
               </h1>
 
               <div className="mt-5 flex items-center justify-center gap-2 sm:mt-6">
@@ -181,7 +181,7 @@ export default function InvitationCover() {
               </div>
 
               <p className="mt-4 font-serif text-[0.95rem] tracking-[0.03em] text-ink/70 sm:mt-5 sm:text-base">
-                January 3, 2027
+                January 17, 2027
               </p>
               <p className="mt-3 font-serif text-sm tracking-[0.02em] text-ink/60 sm:mt-4 sm:text-[0.95rem]">
                 Cordially Invites

@@ -8,6 +8,7 @@ setServers(["1.1.1.1", "8.8.8.8"]);
 const globalForMongo = globalThis as unknown as {
   mongoClient?: MongoClient;
   mongoClientPromise?: Promise<MongoClient>;
+  mongoUri?: string;
 };
 
 function readMongoUri() {
@@ -24,6 +25,14 @@ function readMongoUri() {
 
 function getClientPromise() {
   const uri = readMongoUri();
+
+  if (globalForMongo.mongoUri !== uri) {
+    const previous = globalForMongo.mongoClient;
+    globalForMongo.mongoClient = undefined;
+    globalForMongo.mongoClientPromise = undefined;
+    globalForMongo.mongoUri = uri;
+    void previous?.close().catch(() => undefined);
+  }
 
   if (!globalForMongo.mongoClientPromise) {
     const client = new MongoClient(uri, {
@@ -46,8 +55,8 @@ function getClientPromise() {
 }
 
 export async function getDb() {
-  const client = globalForMongo.mongoClient ?? (await getClientPromise());
-  return client.db("shenu-afree");
+  const client = await getClientPromise();
+  return client.db();
 }
 
 export function mongoFailReason(error: unknown) {

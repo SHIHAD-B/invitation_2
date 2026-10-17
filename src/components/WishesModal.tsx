@@ -117,7 +117,7 @@ export default function WishesModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative z-10 flex max-h-[min(80dvh,36rem)] w-full max-w-[24rem] flex-col rounded-2xl bg-white p-5 shadow-[0_24px_60px_rgba(7,24,47,0.28)] sm:p-6"
+        className="relative z-10 flex max-h-[min(80dvh,36rem)] w-full max-w-[24rem] flex-col rounded-2xl bg-white p-5 shadow-[0_24px_60px_rgba(61,18,36,0.28)] sm:p-6"
       >
         <button
           type="button"
@@ -142,7 +142,7 @@ export default function WishesModal({
           ) : (
             <ul className="space-y-3">
               {wishes.map((wish) => (
-                <li key={wish.id} className="rounded-xl bg-[#f3f6fb] px-4 py-3 text-left text-navy">
+                <li key={wish.id} className="rounded-xl bg-[#f8f2f4] px-4 py-3 text-left text-navy">
                   <div className="flex items-start justify-between gap-3">
                     <p className="font-serif text-sm font-semibold sm:text-base">{wish.name}</p>
                     <p className="shrink-0 font-sans text-[0.65rem] text-navy/55 sm:text-xs">

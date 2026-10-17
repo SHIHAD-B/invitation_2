@@ -20,15 +20,15 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Shuhaib & Afreena",
-  description: "Wedding invitation of Shuhaib Babu and Afreena K.S",
+  title: "Rashid Khan & Sanfiya",
+  description: "Wedding invitation of Rashid Khan and Sanfiya",
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
-  themeColor: "#0b2748",
+  themeColor: "#6b2342",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

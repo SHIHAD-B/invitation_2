@@ -58,7 +58,7 @@ export default function Guestbook() {
   return (
     <section className="paper-bg relative overflow-x-clip px-4 pb-[max(3.5rem,env(safe-area-inset-bottom))] pt-6 sm:px-8 sm:pt-8">
       <div className="relative mx-auto w-full max-w-[21.5rem] sm:max-w-xl md:max-w-2xl">
-        <article className="relative z-10 rounded-2xl bg-white px-5 pb-6 pt-8 shadow-[0_18px_40px_rgba(11,39,72,0.12)] sm:px-8 sm:pb-8 sm:pt-10">
+        <article className="relative z-10 rounded-2xl bg-white px-5 pb-6 pt-8 shadow-[0_18px_40px_rgba(107,35,66,0.12)] sm:px-8 sm:pb-8 sm:pt-10">
           <h2 className="text-center font-serif text-2xl font-semibold tracking-[0.18em] text-navy sm:text-3xl sm:tracking-[0.2em]">
             GUESTBOOK
           </h2>
@@ -93,7 +93,7 @@ export default function Guestbook() {
 
             <div className="relative flex items-center gap-3">
               {showEmojis ? (
-                <div className="absolute bottom-[calc(100%+0.5rem)] left-0 z-20 flex gap-1 rounded-full bg-white px-2 py-1 shadow-[0_8px_20px_rgba(11,39,72,0.12)]">
+                <div className="absolute bottom-[calc(100%+0.5rem)] left-0 z-20 flex gap-1 rounded-full bg-white px-2 py-1 shadow-[0_8px_20px_rgba(107,35,66,0.12)]">
                   {EMOJIS.map((emoji) => (
                     <button
                       key={emoji}
@@ -110,7 +110,7 @@ export default function Guestbook() {
                 type="button"
                 aria-label="Add a blessing emoji"
                 onClick={() => setShowEmojis((open) => !open)}
-                className="grid size-12 shrink-0 place-items-center rounded-xl bg-[#eef1f6] touch-manipulation"
+                className="grid size-12 shrink-0 place-items-center rounded-xl bg-[#f4eef1] touch-manipulation"
               >
                 <SparkleIcon />
               </button>

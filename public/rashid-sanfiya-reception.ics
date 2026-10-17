@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Rashid Khan Sanfiya//Wedding Reception//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:reception-20270117@rashid-sanfiya
+DTSTAMP:20260916T000000Z
+DTSTART:20270117T073000Z
+DTEND:20270117T123000Z
+SUMMARY:Rashid Khan & Sanfiya Reception
+DESCRIPTION:The reception will take place on Sunday, 17 January 2027 at 11:30 AM.
+LOCATION:Thevarcad Convention Centre, Valliyode, Mudappallur Road, Vadakkencherry, Kerala 678682, India
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

@@ -152,7 +152,7 @@ export default function RsvpModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby={titleId}
-        className="relative z-10 w-full max-w-[24rem] rounded-2xl bg-white p-5 shadow-[0_24px_60px_rgba(7,24,47,0.28)] sm:p-6"
+        className="relative z-10 w-full max-w-[24rem] rounded-2xl bg-white p-5 shadow-[0_24px_60px_rgba(61,18,36,0.28)] sm:p-6"
       >
         <button
           type="button"
@@ -227,7 +227,7 @@ export default function RsvpModal({
                   className={`flex w-full items-center gap-3 rounded-xl border px-3 py-3 text-left font-sans text-sm touch-manipulation ${
                     attending === true
                       ? "border-emerald-400 bg-emerald-50 text-navy"
-                      : "border-transparent bg-[#f4f6fa] text-navy"
+                      : "border-transparent bg-[#f7f1f3] text-navy"
                   }`}
                 >
                   <span
@@ -250,7 +250,7 @@ export default function RsvpModal({
                   className={`flex w-full items-center gap-3 rounded-xl border px-3 py-3 text-left font-sans text-sm touch-manipulation ${
                     attending === false
                       ? "border-red-400 bg-red-50 text-navy"
-                      : "border-transparent bg-[#f4f6fa] text-navy"
+                      : "border-transparent bg-[#f7f1f3] text-navy"
                   }`}
                 >
                   <span
@@ -335,7 +335,7 @@ export default function RsvpModal({
               className={`mt-5 inline-flex min-h-11 w-full items-center justify-center rounded-lg font-sans text-sm touch-manipulation ${
                 confirmReady
                   ? "bg-navy text-cream"
-                  : "bg-[#c5cad3] text-white"
+                  : "bg-[#d4c4c8] text-white"
               }`}
             >
               {sending ? "Sending..." : "Confirm"}
