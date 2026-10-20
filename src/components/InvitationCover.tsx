@@ -171,7 +171,7 @@ export default function InvitationCover() {
                 <span className="my-1 block font-serif text-[1.05rem] font-normal text-ink sm:my-1.5 sm:text-xl">
                   &amp;
                 </span>
-                <span className="block">Sanfiya</span>
+                <span className="block">Sanfiya N</span>
               </h1>
 
               <div className="mt-5 flex items-center justify-center gap-2 sm:mt-6">

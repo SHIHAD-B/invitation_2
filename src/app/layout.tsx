@@ -20,8 +20,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Rashid Khan & Sanfiya",
-  description: "Wedding invitation of Rashid Khan and Sanfiya",
+  title: "Rashid Khan & Sanfiya N",
+  description: "Wedding invitation of Rashid Khan and Sanfiya N",
 };
 
 export const viewport: Viewport = {

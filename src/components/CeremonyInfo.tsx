@@ -3,9 +3,11 @@ import Image from "next/image";
 function FamilyBlock({
   title,
   names,
+  lineage,
 }: {
   title: string;
   names: string;
+  lineage: string;
 }) {
   return (
     <div className="text-center">
@@ -14,6 +16,9 @@ function FamilyBlock({
       </p>
       <p className="mt-1 whitespace-pre-line font-serif text-[0.95rem] font-medium leading-snug text-cream sm:text-base">
         {names}
+      </p>
+      <p className="mx-auto mt-2 max-w-[16rem] font-serif text-[0.68rem] leading-relaxed text-cream/75 sm:text-xs">
+        {lineage}
       </p>
     </div>
   );
@@ -31,7 +36,7 @@ export default function CeremonyInfo() {
             &amp;
           </span>
           <span className="relative block">RASHID KHAN</span>
-          <span className="relative mt-1 block">SANFIYA</span>
+          <span className="relative mt-1 block">SANFIYA N</span>
         </h2>
 
         <div className="relative mt-6 w-full max-w-[21.5rem] sm:mt-8 sm:max-w-xl md:max-w-2xl">
@@ -41,9 +46,17 @@ export default function CeremonyInfo() {
             </p>
 
             <div className="relative z-10 mt-7 grid grid-cols-1 gap-6 sm:mt-8 sm:grid-cols-[1fr_auto_1fr] sm:items-start sm:gap-5">
-              <FamilyBlock title="Mr. & Mrs." names={"Saleem\nRubeena"} />
-              <div className="mx-auto h-px w-16 bg-cream/25 sm:mx-0 sm:h-16 sm:w-px sm:self-center" />
-              <FamilyBlock title="Mr. & Mrs." names={"Nowshad\nShajitha"} />
+              <FamilyBlock
+                title="Mr. & Mrs."
+                names={"Saleem Moidu Haji\nRubeena Saleem"}
+                lineage="Grand son of late Moidu Haji & late A K Muhammed Basheer"
+              />
+              <div className="mx-auto h-px w-16 bg-cream/25 sm:mx-0 sm:h-auto sm:min-h-16 sm:w-px sm:self-stretch" />
+              <FamilyBlock
+                title="Mr. & Mrs."
+                names={"Nowshad Yousuf\nShajitha Nowshad"}
+                lineage="Granddaughter of Late Yousuf and M T Yousuf"
+              />
             </div>
 
             <p className="relative z-10 mt-8 px-1 text-center font-serif text-[0.62rem] leading-relaxed tracking-[0.08em] text-cream/85 sm:mt-10 sm:px-4 sm:text-[0.7rem] sm:tracking-[0.16em]">
@@ -61,7 +74,7 @@ export default function CeremonyInfo() {
               </p>
               <p className="my-3 font-serif text-2xl italic text-cream/90 sm:text-3xl">&amp;</p>
               <p className="font-serif text-[1.7rem] font-normal leading-tight text-cream sm:text-4xl md:text-[2.6rem]">
-                Sanfiya
+                Sanfiya N
               </p>
               <p className="mt-2 font-serif text-[0.62rem] tracking-[0.28em] text-cream/70">
                 BRIDE

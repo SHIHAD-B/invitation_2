@@ -88,7 +88,7 @@ export default function InvitationInner() {
                   <div className="relative aspect-[3/4] overflow-hidden">
                     <Image
                       src="/images/photo-1.jpeg"
-                      alt="Rashid Khan and Sanfiya together"
+                      alt="Rashid Khan and Sanfiya N together"
                       fill
                       sizes="(max-width: 768px) 38vw, 200px"
                       className="object-cover object-top"
@@ -102,7 +102,7 @@ export default function InvitationInner() {
                   <div className="relative aspect-[3/4] overflow-hidden">
                     <Image
                       src="/images/photo-2.jpeg"
-                      alt="Rashid Khan and Sanfiya walking together"
+                      alt="Rashid Khan and Sanfiya N walking together"
                       fill
                       sizes="(max-width: 768px) 42vw, 220px"
                       className="object-cover object-top"

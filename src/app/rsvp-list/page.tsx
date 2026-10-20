@@ -4,7 +4,7 @@ import { getRsvps } from "@/lib/rsvp-data";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "RSVP list · Rashid Khan & Sanfiya",
+  title: "RSVP list · Rashid Khan & Sanfiya N",
 };
 
 function formatTime(value: string) {

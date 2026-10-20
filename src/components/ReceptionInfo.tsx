@@ -64,7 +64,7 @@ function JanuaryCalendar() {
 function googleCalendarUrl() {
   const params = new URLSearchParams({
     action: "TEMPLATE",
-    text: "Rashid Khan & Sanfiya Reception",
+    text: "Rashid Khan & Sanfiya N Reception",
     dates: "20270117T073000Z/20270117T123000Z",
     details: "The reception will take place on Sunday, 17 January 2027 at 11:30 AM.",
     location:
