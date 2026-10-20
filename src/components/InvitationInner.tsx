@@ -1,13 +1,16 @@
 import Image from "next/image";
-import { Amiri } from "next/font/google";
+import localFont from "next/font/local";
 import CeremonyInfo from "@/components/CeremonyInfo";
 import ReceptionInfo from "@/components/ReceptionInfo";
 import ReceptionVenue from "@/components/ReceptionVenue";
 import Guestbook from "@/components/Guestbook";
 
-const amiri = Amiri({
+const amiri = localFont({
+  src: "../fonts/Amiri-Bold-Arabic.woff2",
   weight: "700",
-  subsets: ["arabic"],
+  style: "normal",
+  display: "swap",
+  adjustFontFallback: false,
 });
 
 function SaveTheDateMark() {
