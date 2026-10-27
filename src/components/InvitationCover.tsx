@@ -14,8 +14,8 @@ const INNER_IMAGES = [
   "/images/envelop.webp",
   "/images/envelop-cover.webp",
   "/images/flower-spray.webp",
-  "/images/photo-1.jpeg",
-  "/images/photo-2.jpeg",
+  "/images/IMG_6272.JPG.jpeg",
+  "/images/IMG_6273.JPG.jpeg",
 ] as const;
 
 function HeartIcon() {
