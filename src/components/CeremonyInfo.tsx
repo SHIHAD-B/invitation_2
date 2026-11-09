@@ -35,7 +35,7 @@ export default function CeremonyInfo() {
           >
             &amp;
           </span>
-          <span className="relative block">RASHID KHAN</span>
+          <span className="relative block">RASHID KHAN V S</span>
           <span className="relative mt-1 block">SANFIYA N</span>
         </h2>
 
@@ -67,7 +67,7 @@ export default function CeremonyInfo() {
 
             <div className="relative z-10 mt-6 px-6 text-center sm:mt-8 sm:px-10">
               <p className="font-serif text-[1.7rem] font-normal leading-tight text-cream sm:text-4xl md:text-[2.6rem]">
-                Rashid Khan
+                Rashid Khan V S
               </p>
               <p className="mt-2 font-serif text-[0.62rem] tracking-[0.28em] text-cream/70">
                 GROOM

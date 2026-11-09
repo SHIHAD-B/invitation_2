@@ -28,8 +28,8 @@ const playfair = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Rashid Khan & Sanfiya N",
-  description: "Wedding invitation of Rashid Khan and Sanfiya N",
+  title: "Rashid Khan V S & Sanfiya N",
+  description: "Wedding invitation of Rashid Khan V S and Sanfiya N",
 };
 
 export const viewport: Viewport = {

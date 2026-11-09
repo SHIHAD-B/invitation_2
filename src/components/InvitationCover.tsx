@@ -167,7 +167,7 @@ export default function InvitationCover() {
               </div>
 
               <h1 className="font-serif text-[1.7rem] font-normal leading-[1.15] tracking-[-0.01em] text-ink sm:text-[2.15rem] md:text-[2.45rem]">
-                <span className="block">Rashid Khan</span>
+                <span className="block">Rashid Khan V S</span>
                 <span className="my-1 block font-serif text-[1.05rem] font-normal text-ink sm:my-1.5 sm:text-xl">
                   &amp;
                 </span>
